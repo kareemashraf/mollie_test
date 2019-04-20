@@ -259,7 +259,7 @@ class Game {
 
 	public function Intro()
 		{
-			echo "<center><h1>Test Assignment @ Mollie</h1> <a href='#'> <button>refresh</button></a></br> 
+			echo "<center><h1>Test Assignment @ Mollie</h1> <a href='http://ec2-34-252-123-254.eu-west-1.compute.amazonaws.com/'> <button>refresh</button></a></br> 
 			<h3>Dominoes programming exercise</h3>
 			<span>Kindly find the source code in the following GitHub Repository <a href='https://github.com/kareemashraf/mollie_test'> https://github.com/kareemashraf/mollie_test </a></span>
 			<hr></center>";
