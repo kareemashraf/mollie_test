@@ -27,14 +27,12 @@ class Game {
 		{
 			$board = array(0,1,2,3,4,5,6);
 			$dominoes = array();
-			for ($i = 0; $i <= 6; $i++)
-				{
+			for ($i = 0; $i <= 6; $i++){
 				unset($board[$i - 1]);
-				foreach($board as $key => $value)
-					{
+				foreach($board as $key => $value){
 					$dominoes[] = [$value, $i];
-					}
 				}
+			}
 
 			shuffle($dominoes); //to randomly shuffle all the domioes tiles
 			list($this->Player1, $this->Player2) = array_chunk($dominoes, 7); //give each player 7 tiles
@@ -48,21 +46,21 @@ class Game {
 	public function start()
 		{
 
-		// start with a randome Player
+			// start with a randome Player
 
-		$players = $this->Players;
-		shuffle($players);
-		$this->nowPlaying = $players[0];
-		$firstTile = $this->remains[0];
-		unset($this->remains[0]); //remove the tile from the remaining tiles
-		$this->board = [$firstTile];
+			$players = $this->Players;
+			shuffle($players);
+			$this->nowPlaying = $players[0];
+			$firstTile = $this->remains[0];
+			unset($this->remains[0]); //remove the tile from the remaining tiles
+			$this->board = [$firstTile];
 
-		echo "Game starting with first tile: " . $this->createTile($firstTile) . "</br>";
-		$this->front = $firstTile[0];  
-		$this->back = $firstTile[1];  
-		$this->frontTile = $firstTile; 
-		$this->backTile = $firstTile; 
-		$this->playTurn();
+			echo "Game starting with first tile: " . $this->createTile($firstTile) . "</br>";
+			$this->front = $firstTile[0];  
+			$this->back = $firstTile[1];  
+			$this->frontTile = $firstTile; 
+			$this->backTile = $firstTile; 
+			$this->playTurn();
 		}
 
 	/**
@@ -261,7 +259,7 @@ class Game {
 		{
 			echo "<center><h1>Test Assignment @ Mollie</h1> <a href='http://ec2-34-252-123-254.eu-west-1.compute.amazonaws.com/'> <button>refresh</button></a></br> 
 			<h3>Dominoes programming exercise</h3>
-			<span>Kindly find the source code in the following GitHub Repository <a href='https://github.com/kareemashraf/mollie_test'> https://github.com/kareemashraf/mollie_test </a></span>
+			<span>Kindly find the source code in the following GitHub Repository <a target='_blank' href='https://github.com/kareemashraf/mollie_test'> https://github.com/kareemashraf/mollie_test </a></span>
 			<hr></center>";
 		}
 
