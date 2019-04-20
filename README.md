@@ -2,6 +2,8 @@
 # Dominoes programming exercise
 <hr>
 The test was created using PHP 7.1 
+
+could be tested in http://ec2-34-252-123-254.eu-west-1.compute.amazonaws.com
 <hr>
 Dominoes is a family of games played with rectangular tiles. Each tile is divided into two square ends. Each end is marked with a number (one to
 six) of spots or is blank. There are 28 tiles, one for each combination of spots and blanks (see image).
