@@ -120,8 +120,10 @@ class Game {
 				//in case the reamining tiles are over, who wins the round is the one with less tiles
 				if (count($this->Player1) < count($this->Player2)){ 
 					die("Player " . $this->Players[0] . " has won!");  
-				}else{
+				}elseif(count($this->Player2) < count($this->Player1)){
 					die("Player " . $this->Players[1] . " has won!");
+				}else{
+					die("Player " . $this->nowPlaying . " has won!");
 				}
 			}
 
